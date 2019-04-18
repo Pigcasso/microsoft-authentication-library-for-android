@@ -24,7 +24,7 @@ package com.microsoft.identity.client.internal.controllers;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.microsoft.identity.client.AuthenticationCallback;
 import com.microsoft.identity.client.exception.MsalArgumentException;
