@@ -121,11 +121,15 @@ dependencies {
     androidTestImplementation 'androidx.test:rules:1.2.0-alpha03'
     androidTestImplementation "org.mockito:mockito-android:$rootProject.ext.mockitoAndroidVersion"
 
-    snapshotApi(group: 'com.microsoft.identity', name: 'common', version: '0.0.8', changing: true)
+    // snapshotApi(group: 'com.microsoft.identity', name: 'common', version: '0.0.8', changing: true)
 
-    distApi("com.microsoft.identity:common:0.0.8") {
+    /*distApi("com.microsoft.identity:common:0.0.8") {
         transitive = false
-    }
+    }*/
+
+    // https://mvnrepository.com/artifact/com.microsoft.identity/common
+    implementation group: 'com.microsoft.identity', name: 'common', version: '0.0.9'
+
 }
 
 def configDir = new File(buildscript.sourceFile.parentFile.parentFile, 'config')
