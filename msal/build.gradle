@@ -8,7 +8,7 @@ group = 'com.microsoft.identity.client'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion '28.0.3'
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -106,7 +106,7 @@ task sourcesJar(type: Jar) {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
-    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0-rc01'
     implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
     implementation 'com.nimbusds:nimbus-jose-jwt:5.7'
 
